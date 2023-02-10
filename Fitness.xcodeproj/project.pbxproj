@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CE2BD689299357B5005005A5 /* FitnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BD688299357B5005005A5 /* FitnessApp.swift */; };
-		CE2BD68B299357B5005005A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BD68A299357B5005005A5 /* ContentView.swift */; };
+		CE2BD68B299357B5005005A5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BD68A299357B5005005A5 /* LandingView.swift */; };
 		CE2BD68D299357B6005005A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2BD68C299357B6005005A5 /* Assets.xcassets */; };
 		CE2BD690299357B6005005A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2BD68F299357B6005005A5 /* Preview Assets.xcassets */; };
+		CE676196299645DE007F0650 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE676195299645DE007F0650 /* PrimaryButtonStyle.swift */; };
+		CE676198299667D9007F0650 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE676197299667D9007F0650 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2BD685299357B5005005A5 /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2BD688299357B5005005A5 /* FitnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessApp.swift; sourceTree = "<group>"; };
-		CE2BD68A299357B5005005A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE2BD68A299357B5005005A5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		CE2BD68C299357B6005005A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2BD68F299357B6005005A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE676195299645DE007F0650 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		CE676197299667D9007F0650 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CE2BD688299357B5005005A5 /* FitnessApp.swift */,
-				CE2BD68A299357B5005005A5 /* ContentView.swift */,
+				CE2BD68A299357B5005005A5 /* LandingView.swift */,
+				CE676195299645DE007F0650 /* PrimaryButtonStyle.swift */,
+				CE676197299667D9007F0650 /* Color+Extension.swift */,
 				CE2BD68C299357B6005005A5 /* Assets.xcassets */,
 				CE2BD68E299357B6005005A5 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2BD68B299357B5005005A5 /* ContentView.swift in Sources */,
+				CE676196299645DE007F0650 /* PrimaryButtonStyle.swift in Sources */,
+				CE2BD68B299357B5005005A5 /* LandingView.swift in Sources */,
 				CE2BD689299357B5005005A5 /* FitnessApp.swift in Sources */,
+				CE676198299667D9007F0650 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
