@@ -7,25 +7,23 @@
 
 import SwiftUI
 
-struct DropDownView: View {
-    var dropDownText: String
-    
-    init(dropDownText: String) {
-        self.dropDownText = dropDownText
-    }
+struct DropDownView<T: DropdownItemProtocol>: View {
+    @Binding var viewModel: T
     
     var body: some View {
         VStack {
             HStack {
-                Text("Pilates")
+                Text(viewModel.headerTitle)
                     .font(.system(size: 21, weight: .semibold))
                 Spacer()
             }
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
-            Button(action: {}, label: {
+            Button(action: {
+                viewModel.isFirstOptionSelected = true
+            }, label: {
                 HStack {
-                    Text(dropDownText)
+                    Text(viewModel.dropdownTitle)
                         .font(.system(size: 28, weight: .semibold))
                     Spacer()
                     Image(systemName: "arrowtriangle.down.circle")
@@ -36,17 +34,5 @@ struct DropDownView: View {
             .buttonStyle(PrimaryButtonStyle())
         }
         .padding(20)
-    }
-}
-
-struct DropDownView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            DropDownView(dropDownText: "Roll up")
-        }
-        NavigationView {
-            DropDownView(dropDownText: "Roll over")
-        }
-        .environment(\.colorScheme, .dark)
     }
 }
