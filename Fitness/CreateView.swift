@@ -32,6 +32,18 @@ struct CreateView: View {
                         })
                 }
             }
+            .actionSheet(isPresented: Binding<Bool>(get: {
+                viewModel.hasSelectedDropdown
+            }, set: {_ in }), content: { () -> ActionSheet in
+                ActionSheet(
+                    title: Text("Select"),
+                    buttons: viewModel.displayedOptions.indices.map { index in
+                        let option = viewModel.displayedOptions[index]
+                        return ActionSheet.Button.default(Text(option.formatted), action: {
+                            viewModel.send(action: .selectOption(index: index))
+                        })
+                    }
+            )})
             .navigationBarTitle("Create")
             .navigationBarBackButtonHidden(true)
             .padding(.bottom, 15)
